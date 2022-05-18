@@ -88,19 +88,18 @@ function deleteItem(e) {
 
 function editItem(e) {
     const element = e.currentTarget.parentElement.parentElement;
-
-    editElement = e.currentTarget.parentElement.previousElementSibling;
-    item.value = editElement.innerHTML;
     if (editFlag === true) {
         displayAlert("cannot edit more than one item", "danger");
         return;
     }
     else {
+        editElement = e.currentTarget.parentElement.previousElementSibling;
         editElement.classList.add("title-edit")
         editFlag = true;
+        item.value = editElement.innerHTML;
+        submitBtn.textContent = "edit";
     }
     editID = element.dataset.id;
-    submitBtn.textContent = "edit";
 }
 
 function displayAlert(text, action) {
