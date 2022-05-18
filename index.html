@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Buy List</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="shortcut icon" href="./src/css/images/Icon_bread.svg" type="image/x-icon">
+</head>
+
+<body>
+    <section class="section-center">
+        <form class="to-buy-form">
+            <div class="alert-div">
+                <p class="alert">#</p>
+            </div>
+            <h3>What to Buy - List</h3>
+            <div class="form-control">
+                <input type="text" id="item" placeholder="e.g. eggs">
+                <button type="submit" class="submit-btn">submit</button>
+            </div>
+        </form>
+
+        <div class="to-buy-container">
+            <div class="to-buy-list">
+            </div>
+            <div class="clear-div">
+                <button type="button" class="clear-btn">clear items</button>
+                <div class="clear-btn-underline"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
