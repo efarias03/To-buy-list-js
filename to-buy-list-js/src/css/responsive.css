@@ -1,0 +1,10 @@
+@media (max-width: 576px) {
+    .container {
+        width: 80%;
+        transition: .5s ease-in-out;
+    }
+    .to-buy-form h3 {
+        font-size: 1.5rem;
+        transition: .5s ease;
+    }
+}
